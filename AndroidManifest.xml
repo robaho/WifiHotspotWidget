@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.robaho.wifihotspotwidget"
+    android:versionCode="6"
+    android:versionName="1.4" >
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL" /> -->
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.robaho.wifihotspotwidget.MyPreferences"
+            android:label="@string/title_activity_my_configure" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+                <action android:name="com.robaho.wifihotspotwidget.SETTINGS" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.robaho.wifihotspotwidget.MyWidget"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widgetinfo" />
+        </receiver>
+        
+        <service
+            android:name="com.robaho.wifihotspotwidget.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <activity
+            android:name="com.robaho.wifihotspotwidget.MyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/activity_title"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </activity>
+        </application>
+
+</manifest>

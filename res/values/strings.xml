@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wifi Hotspot NetMgr</string>
+    <string name="action_settings">Settings</string>
+    <string name="activity_title">Wifi Hotspot NetMgr</string>
+    <string name="wifi_hotspot_toggle">Wifi Hotspot NetMgr</string>
+    <string name="wifi_hotspot_loading">Loading hotspot status...</string>
+    <string name="wifi_hotspot_on">The hotspot is ON.</string>
+    <string name="wifi_hotspot_off">The hotspot is OFF.</string>
+    <string name="settings">Settings</string>
+</resources>

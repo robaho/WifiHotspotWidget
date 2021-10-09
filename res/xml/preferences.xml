@@ -1,0 +1,70 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:capitalize="words"
+        android:inputType="textCapWords"
+        android:key="ssid"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_ssid" />
+    <EditTextPreference
+        android:capitalize="words"
+        android:key="password"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_password" />
+    
+    <ListPreference
+        android:defaultValue="wpa-psk"
+        android:entries="@array/pref_security_values"
+        android:entryValues="@array/pref_security_values"
+        android:key="security"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_security" />
+    
+    <EditTextPreference
+        android:defaultValue="wlan0"
+        android:inputType="text"
+        android:key="wlandev"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_wlan_device" />
+    
+    <EditTextPreference
+        android:defaultValue="rmnet0"
+        android:inputType="text"
+        android:key="radiodev"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_radio_device" />
+    
+    <EditTextPreference
+        android:defaultValue="8.8.8.8"
+        android:inputType="text"
+        android:key="dns1"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_dns1" />
+    
+    <EditTextPreference
+        android:defaultValue="8.8.4.4"
+        android:inputType="text"
+        android:key="dns2"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_dns2" />
+    
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="autostart"
+        android:title="@string/pref_autostart" />
+        
+    
+</PreferenceScreen>

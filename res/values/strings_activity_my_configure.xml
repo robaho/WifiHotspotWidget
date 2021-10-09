@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="title_activity_my_configure">Wifi Hotspot NetMgr Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <string name="pref_ssid">Hotspot SSID</string>
+    <string name="pref_password">Password</string>
+    <string name="pref_security">Security</string>
+    <string-array name="pref_security_values">
+        <item>wpa-psk</item>
+        <item>wpa2-psk</item>
+        <item>none</item>
+    </string-array>
+
+    <string name="pref_wlan_device">WLAN Device</string>
+    <string name="pref_wlan_device_default">wlan0</string>
+    
+    <string name="pref_radio_device">Radio Device</string>
+    <string name="pref_radio_device_default">rmnet0</string>
+    
+    <string name="pref_dns1">DNS #1</string>
+    <string name="pref_dns1_default">8.8.8.8</string>
+    
+    <string name="pref_dns2">DNS #2</string>
+    <string name="pref_dns2_default">8.8.4.4</string>
+    
+    <string name="pref_autostart">Auto-Start</string>
+    <string name="pref_autostart_default_default">false</string>
+    
+</resources>
